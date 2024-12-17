@@ -1,6 +1,5 @@
 from fastapi import APIRouter
 
-# Create the main router for managed APIs
 router = APIRouter()
 
 # API 1: File Storage API

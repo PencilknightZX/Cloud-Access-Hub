@@ -1,0 +1,9 @@
+
+# Usage Tracking and Limit Enforcement
+@router.post("/usage/{user_id}")
+
+[POST] http://127.0.0.1:8000/usage/Wanda?api_endpoint=/api1
+
+@router.get("/usage/{user_id}/limit")
+
+[GET] http://127.0.0.1:8000/usage/Max/limit
