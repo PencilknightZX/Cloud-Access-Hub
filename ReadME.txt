@@ -27,9 +27,7 @@ Ensure you have the following installed:
 ## 1. Project Setup
 
 ### a. Clone the Repository:
-```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/PencilknightZX/Cloud-Access-Hub.git
 
 ##2. Install Dependencies:
 using pip install these:
