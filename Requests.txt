@@ -1,0 +1,76 @@
+# Admin: Manage Subscription Plans
+[POST] http://127.0.0.1:8000/plans
+{
+    "name": "Student",
+    "description": "Full access plan with higher limits.",
+    "permissions": ["File Storage", "Logging", "User Profile Management", "Data Analytics", "Logging", "Email Notifications", "Monitoring"],
+    "usage_limits": {
+        "/api1": 6,
+        "/api2": 6,
+        "/api3": 6,
+	"/api4": 6,
+	"/api5": 6,
+	"/api6": 6,
+    }
+}
+
+[PUT] http://127.0.0.1:8000/plans/Premium
+{
+    "name": "Student",
+    "description": "Full access plan with higher limits.",
+    "permissions": ["File Storage", "Logging", "User Profile Management", "Data Analytics", "Logging", "Email Notifications", "Monitoring"],
+    "usage_limits": {
+        "/api1": 7,
+        "/api2": 7,
+        "/api3": 7,
+	"/api4": 7,
+	"/api5": 7,
+	"/api6": 7,
+    }
+}
+
+[DELETE] http://127.0.0.1:8000/plans/Free
+
+# Admin: Manage Permissions
+[POST] http://127.0.0.1:8000/permissions
+{
+    "name": "Camera",
+    "api_endpoint": "/api7",
+    "description": "Service to take pictures."
+}
+
+[PUT] http://127.0.0.1:8000/permissions/Camera
+{
+    "name": "Movie Camera",
+    "api_endpoint": "/api7",
+    "description": "Take Pictures and videos."
+}
+
+[DELETE] http://127.0.0.1:8000/permissions/Movie Camera
+
+# Sub Handling: Subscribe to Plans and View Details 
+[POST] http://127.0.0.1:8000/subscriptions
+{
+    "user_id": "Vision",
+    "plan_name": "Premium",
+    "usage": {}
+}
+
+[GET] http://127.0.0.1:8000/subscriptions/Vision
+
+[GET] http://127.0.0.1:8000/subscriptions/Max/usage
+
+[PUT] http://127.0.0.1:8000/subscriptions/Wanda?plan_name=Standard
+
+# Access Control
+[GET] http://127.0.0.1:8000/access/John/api1
+[GET] http://127.0.0.1:8000/access/John/api6
+
+# Usage Tracking and Limit Enforcement
+
+[POST] http://127.0.0.1:8000/usage/Wanda?api_endpoint=/api1
+
+@router.get("/usage/{user_id}/limit")
+
+[GET] http://127.0.0.1:8000/usage/Max/limit
+
