@@ -2,6 +2,9 @@
 
 Team Members: Emmanuel Ifeanyi, Josue Cota, Nathan Chen
 
+Github Repo: https://github.com/PencilknightZX/Cloud-Access-Hub
+Video Demo: https://www.youtube.com/watch?v=s4kg8hMDlkc
+
 This application is a FastAPI-based backend system to manage access to cloud services 
 based on user subscriptions. It provides role-based access control (RBAC), 
 usage tracking, and enforcement of API limits.

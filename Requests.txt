@@ -8,13 +8,13 @@
         "/api1": 6,
         "/api2": 6,
         "/api3": 6,
-	"/api4": 6,
-	"/api5": 6,
-	"/api6": 6,
+	    "/api4": 6,
+	    "/api5": 6,
+	    "/api6": 6
     }
 }
 
-[PUT] http://127.0.0.1:8000/plans/Premium
+[PUT] http://127.0.0.1:8000/plans/Student
 {
     "name": "Student",
     "description": "Full access plan with higher limits.",
@@ -23,9 +23,9 @@
         "/api1": 7,
         "/api2": 7,
         "/api3": 7,
-	"/api4": 7,
-	"/api5": 7,
-	"/api6": 7,
+	    "/api4": 7,
+	    "/api5": 7,
+	    "/api6": 7
     }
 }
 
