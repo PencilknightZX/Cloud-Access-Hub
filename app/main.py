@@ -1,7 +1,7 @@
 from fastapi import FastAPI, HTTPException, Depends
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from app.managed_apis import router as managed_apis_router
+from routes.managed_apis import router as managed_apis_router
 from routes.manage_sub_plans import router as manage_sub_router
 from routes.permissions import router as perm_router
 from routes.user_sub_handling import router as sub_handling_router
