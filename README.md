@@ -33,26 +33,35 @@ Ensure you have the following installed:
 ## Project Setup
 
 ### 1. Clone the Repository:
+```
 git clone https://github.com/PencilknightZX/Cloud-Access-Hub.git
+```
 
 ### 2. Install Dependencies:
-using pip install these:
+- Using pip install these:
+```
 fastapi
 uvicorn
 motor
 pydantic
+```
 
 ### 3. Configure MongoDB
-Setup MongoDB Connection
-create an .env file and add your mongo_uri, ex: MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
-Replace <username>, <password>, <cluster>, and <dbname> with your MongoDB Atlas credentials
+- Setup MongoDB Connection
+- Create an .env file and add your mongo_uri
+```
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbname>?retryWrites=true&w=majority
+```
+- Replace username, password, cluster, and dbname with your MongoDB Atlas credentials
 
 
 ### 4. Run the Application
 Use this command in your terminal:
+```
 uvicorn main:app --reload
+```
 
 
 ### 5. Test Endpoints
-Use Postman to test endpoints
-Example requests are listed in Requests.txt 
+- Use Postman to test endpoints
+- Example requests are listed in Requests.txt 
